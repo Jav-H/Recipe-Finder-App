@@ -47,16 +47,15 @@ Our team will keep API keys secure behind a **Python backend**.
 
 | **Component**  | **Technology** | **Rationale**  |
 |----------------|----------------|----------------|
-| Frontend | React | Component model, fast dev, strong ecosystem |
+| Frontend | HTML/CSS/JavaScript | Component model, fast dev, strong ecosystem |
 | Styling | CSS Modules | Rapid, responsive UI |
 | Backend | Python (FastAPI or Flask) | Simple, performant API layer; easy to host |
 | Data Fetching | Axios / Fetch | Standard HTTP client |
-| State | React Hooks + optional Context | Lightweight global state (filters, saved items) |
 | Env/Secrets | `.env` + server config | Keeping API keys off client side |
 | Deployment | Web hosting service | — |
 
 ### 5.2 Architecture Overview
-The **React frontend** contacts the **Python API**, which in turn communicates with the **Spoonacular API**.  
+The **Frontend** contacts the **Backend (Python API)**, which in turn communicates with the **Spoonacular API**.  
 API keys are secured on the server side.  
 The Python API acts as a **proxy** and forwards requests/responses between the frontend and Spoonacular.
 
@@ -68,3 +67,4 @@ The Python API acts as a **proxy** and forwards requests/responses between the f
 3. API Documentation  
 4. UX Artifacts (wireframes and style notes)  
 5. Brief Demonstration (live or recorded video)  
+
