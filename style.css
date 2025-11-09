@@ -1,0 +1,39 @@
+body {
+    background-color: rgb(187, 151, 103);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: beige;
+    text-align: center;
+}
+
+form {
+    display:  flex;
+    font-size: 32px;
+    margin: 30px;
+    justify-content: center;
+}
+
+button {
+    margin-left: 10px;
+}
+
+#results {
+    display: grid;
+    gap: 40px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    margin: 40px;
+}
+
+#results > div {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
